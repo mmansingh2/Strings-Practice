@@ -1,0 +1,21 @@
+font PFont;
+String headline = "Testing 123";
+float x;
+
+void setup() {
+    size(800,600);
+    f = createFont ("Arial",16,true);
+    x = width;
+    }
+
+void draw() {
+    background (0);
+    textFont(f,16);
+    fill(0,255,0);
+    text(headline,x,300);
+    textAlign(LEFT);
+    x = x - 1;
+    if(x <= 0) {
+        x = width/2;
+        }
+    }
